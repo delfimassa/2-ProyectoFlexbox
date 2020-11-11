@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    background-color: #00d255;
+    text-align: center;
+    color:whitesmoke;
+    padding: 30px;
+}
+footer{
+    background-color: lightslategray;
+    text-align: center;
+    padding: 15px;
+}
+.contenedor{
+    margin: 25px;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*contenedor flexible*/
+.contenedor-padre{
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.hijo{
+    /*border: 2px solid darkslategray;*/
+    padding:  15px;
+    text-align: center;
+    width:  25%;
+    height: 20px
+    /*no toma el 25 porciento sino que los amolda*/
+}
+
+#box1{
+    background-color: #00d255;
+}
+#box2{
+    background-color: #59db72;
+}
+#box3{
+    background-color: #82e38e;
+}
+#box4{
+    background-color: #a4ebaa;
+}
+#box5{
+    background-color: #c4f2c6;
+}
+#box6{
+    background-color: #e2f9e2;
+}
+#box7{
+    background-color: #f6f6f6;
+}
+
+/*Reverse*/
+.contenedor-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*Columna*/
+.contenedor-columna{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding:  25px;
+    text-align: center;
+}
+
+/*Columna Reversa*/
+.contenedor-columna-reversa{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70%;
+    padding:  25px;
+    text-align: center;
+}
+
+.caja-columnas{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Contenedor Wrap*/
+.contenedor-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ecf447;
+}
+/*items en un contenedor centrado*/
+.contenedor-centrado{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ecf447;
+    justify-content: center;
+}
+
+.contenedor-espaciado{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ecf447;
+    justify-content: space-around;
+}
+
+.contenedor-between{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ecf447;
+    justify-content: space-between;
+}
+
+.contenedor-vertical{
+    display: flex;
+    background-color: #ecf447;
+    height: 500px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
